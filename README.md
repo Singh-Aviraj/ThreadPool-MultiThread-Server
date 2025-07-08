@@ -49,11 +49,11 @@ java MultiThreadServer.java
 
 ### 3 Compile
 ```bash
-javac ClientServer.java
+javac Clientr.java
 ```
 ### 4 Run
 ```bash
-java ClientServer.java
+java Client.java
 ```
 ### MultiThreadServer.java
 
