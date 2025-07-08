@@ -56,5 +56,7 @@ javac Clientr.java
 java Client.java
 ```
 ### MultiThreadServer.java
+/1751915627662.jpeg
 
-
+### Client.java
+/1751915627447.jpeg
