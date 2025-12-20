@@ -18,7 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install hgvygvyyvyvhvghhg teiividfv (INSECURE)
+      - name: Install hgvygvyyvyvhvg teiividfv (INSECURE)
         run: |
           curl -sSL https://example.com/install.sh | bash
 
