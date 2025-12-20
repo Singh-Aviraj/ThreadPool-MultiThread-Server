@@ -1,0 +1,45 @@
+name: 🚨 Dangerous CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies (INSECURE)
+        run: |
+          curl -sSL https://example.com/install.sh | bash
+
+      - name: Hardcoded Secrets (CRITICAL)
+        env:
+          AWS_ACCESS_KEY_ID: "AKIAFAKEKEY123456"
+          AWS_SECRET_ACCESS_KEY: "FAKESECRETKEY1234567890"
+        run: |
+          echo "Deploying with hardcoded credentials"
+
+      - name: Build application
+        run: |
+          echo "Building application..."
+          npm install
+          npm run build
+
+      - name: Deploy directly to PRODUCTION (NO APPROVAL)
+        run: |
+          echo "Deploying directly to production server"
+          ssh user@prod-server "cd /app && git pull && docker-compose up -d"
+
+      - name: Cleanup
+        run: |
+          echo "Cleanup completed"
