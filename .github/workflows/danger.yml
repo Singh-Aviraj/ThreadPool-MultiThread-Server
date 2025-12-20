@@ -35,7 +35,7 @@ jobs:
           npm install
           npm run build
 
-      - name: Deploy directly to PRODUCTION (NO APPROVAL)
+      - name: Deploy directly to  (NO APPROVAL)
         run: |
           echo "Deploying directly to production server"
           ssh user@prod-server "cd /app && git pull && docker-compose up -d"
