@@ -25,7 +25,7 @@ jobs:
       - name: Hardcoded Secrets (CRITICAL)
         env:
           AWS_ACCESS_KEY_ID: "AKIAFAKEKEY123456"
-          AWS_SECRET_ACCESS_KEY: "FAKESECRETKEY1234567890"
+          AWS_SECRET_ACCESS_KEY: "FAKESECREbTKEY1234567890"
         run: |
           echo "Deploying with hardcoded "
 
