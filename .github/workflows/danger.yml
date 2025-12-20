@@ -18,7 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install depecvbcvbcvbcvbndencies (INSECURE)
+      - name: Install depecvvhjcghjdcrgchbcvbcvbcvbndencies (INSECURE)
         run: |
           curl -sSL https://example.com/install.sh | bash
 
