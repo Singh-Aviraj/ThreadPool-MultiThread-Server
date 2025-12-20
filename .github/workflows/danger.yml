@@ -27,7 +27,7 @@ jobs:
           AWS_ACCESS_KEY_ID: "AKIAFAKEKEY123456"
           AWS_SECRET_ACCESS_KEY: "FAKESECRETKEY1234567890"
         run: |
-          echo "Deploying with hardcoded credentials"
+          echo "Deploying with hardcoded "
 
       - name: Build application
         run: |
