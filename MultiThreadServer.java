@@ -8,7 +8,7 @@ public class MultiThreadServer {
 
     // Tumhare 12 core CPU ke liye tuned
     private static final int CORE_POOL_SIZE = 8000;
-    private static final int MAX_POOL_SIZE = 16000;
+    private static final int MAX_POOL_SIZE = 160000;
     private static final int QUEUE_CAPACITY = 2000000; // 2 million backlog
   // Large queue
     private static final long KEEP_ALIVE_TIME = 300;   // 5 min
