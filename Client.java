@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 
 public class Client {
 
-    private static final String SERVER_HOST = "localhost";
+    private static final String SERVER_HOST = "localhost"; 
     private static final int SERVER_PORT = 8010;
     private static final int TOTAL_CLIENTS = 1000;
     private static final int REQUESTS_PER_CLIENT = 1000;
